@@ -17,3 +17,16 @@ class SinglyLinkedList:
             last_node = last_node.next
         last_node.next = new_node
 
+    def display(self):
+        current = self.head
+        while current:
+            print(current.data, end=" -> ")
+            current = current.next
+        print("None")
+
+# Example usage:
+sll = SinglyLinkedList()
+sll.append(1)
+sll.append(2)
+sll.append(3)
+sll.display()
